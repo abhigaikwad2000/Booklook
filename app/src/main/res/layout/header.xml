@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="#FF5722"
+    android:layout_gravity="top"
+    android:orientation="vertical"
+    android:padding="20dp"
+   >
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@mipmap/bkicon">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/navname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:fontFamily="@font/amaranth"
+        ></TextView>
+    <TextView
+        android:id="@+id/navemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:fontFamily="@font/amaranth"
+        ></TextView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

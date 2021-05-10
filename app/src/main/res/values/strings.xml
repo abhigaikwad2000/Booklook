@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Book Look</string>
+    <string name="username">username</string>
+
+    <string name="drawer_open">DrawerOpen</string>
+    <string name="drawer_close">DrawerClose</string>
+    <string name="mechanical_engineering">Mechanical Engineering</string>
+    <string name="expand">Expand</string>
+    <string name="civil_engineering">Civil Engineering</string>
+    <string name="computer_engineering">Computer Engineering</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "496032037838",
+    "firebase_url": "https://book-look-26ef3-default-rtdb.firebaseio.com",
+    "project_id": "book-look-26ef3",
+    "storage_bucket": "book-look-26ef3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496032037838:android:239559f796b685fa25099f",
+        "android_client_info": {
+          "package_name": "edu.myexample.abhi.boollook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496032037838-no0dgfo0cmc1jark4a27hsiokb28grst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDArTt-uCwZgz2FdgfoS22ZOwWrIpk_i1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496032037838-no0dgfo0cmc1jark4a27hsiokb28grst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
