@@ -2,37 +2,55 @@
 <androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="220dp"
-    android:background="#FF5722"
+    android:background="@drawable/headerback"
     android:layout_gravity="top"
     android:orientation="vertical"
     android:padding="20dp"
    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
     <ImageView
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:src="@mipmap/bkicon">
 
     </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/amaranth"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:text="Welcome To BooK Look"></TextView>
+    </LinearLayout>
+
+
     <TextView
         android:id="@+id/navname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:layout_marginTop="10dp"
-        android:text="Name"
-        android:textColor="@color/white"
         android:fontFamily="@font/amaranth"
-        ></TextView>
+
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"></TextView>
+
     <TextView
         android:id="@+id/navemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"
-        android:text="Email"
-        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/amaranth"
-        ></TextView>
+
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"></TextView>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

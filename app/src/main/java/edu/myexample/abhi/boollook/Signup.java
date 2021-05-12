@@ -22,6 +22,7 @@ public class Signup extends AppCompatActivity {
     EditText uname,pass,name,phon;
     Button reg,log;
     private FirebaseAuth auth;
+
     ProgressBar progressBar;
 
     @Override

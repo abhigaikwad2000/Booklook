@@ -16,7 +16,7 @@ public class MechBooks extends AppCompatActivity {
         books = findViewById(R.id.books);
         String[] values = new String[]{
                 "Mechanical Engineering for Makers"," Mechatronics: Electronic Control Systems in Mechanical § Electrical Engineering",
-                "The Way Things Work Now"," People Skills for Engineers","Mechanical Engineer's Pocket Book"," Aerodynamics for Engineers",
+                "The Way Things Work Now"," People Skills for Engineers","Mechanical Engineer's Pocket edu.myexample.abhi.boollook.Book"," Aerodynamics for Engineers",
                 "Gears and Gear Cutting for Home Machinists"," DeGarmo's Materials and Processes in Manufacturing"
         };
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1,
