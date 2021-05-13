@@ -1,5 +1,6 @@
 package edu.myexample.abhi.boollook;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder> {
+public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder>  {
     private List<Book> listData;
     public Myadapter(List<Book> listData) {
         this.listData = listData;
@@ -39,6 +40,7 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder> {
         return listData.size();
     }
 
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView bkname,bkauthor,bkdepartment;
         public ViewHolder(@NonNull View itemView) {
@@ -46,6 +48,9 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder> {
             bkname=(TextView)itemView.findViewById(R.id.bookname);
             bkauthor=(TextView)itemView.findViewById(R.id.bookauthor);
             bkdepartment=(TextView)itemView.findViewById(R.id.bookdepartment);
+
+
+
         }
     }
 }
