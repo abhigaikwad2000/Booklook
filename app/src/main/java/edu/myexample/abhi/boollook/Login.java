@@ -23,9 +23,8 @@ public class Login extends AppCompatActivity {
     EditText uname, pass;
     private FirebaseAuth mAuth;
     ProgressBar progressBar;
-//hii
-    //hello
 
+//hii git
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
