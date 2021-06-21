@@ -1,6 +1,5 @@
 package edu.myexample.abhi.boollook;
 
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,12 +8,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.List;
 
 public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder>  {
     private List<Book> listData;
-    public Myadapter(List<Book> listData) {
+    rvonclickinterface clickinterface;
+    public Myadapter(List<Book> listData, rvonclickinterface clickinterface) {
         this.listData = listData;
+        this.clickinterface=clickinterface;
     }
 
 
@@ -48,6 +51,12 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder>  {
             bkname=(TextView)itemView.findViewById(R.id.bookname);
             bkauthor=(TextView)itemView.findViewById(R.id.bookauthor);
             bkdepartment=(TextView)itemView.findViewById(R.id.bookdepartment);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    clickinterface.onclick(getAdapterPosition());
+                }
+            });
 
 
 

@@ -63,6 +63,12 @@ public class Signup extends AppCompatActivity {
                     pass.requestFocus();
                     progressBar.setVisibility(View.INVISIBLE);
                 }
+                if(phon.getText().toString().length()<10)
+                {
+                    phon.setError("Provide Valid phon no");
+                    pass.requestFocus();
+                    progressBar.setVisibility(View.INVISIBLE);
+                }
                 if(Phon.isEmpty())
                 {
                     phon.setError("pls Provide phon no");

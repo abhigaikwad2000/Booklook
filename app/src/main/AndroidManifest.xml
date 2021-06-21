@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/bkicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Boollook">
+        <activity android:name=".BookActivity"></activity>
         <activity android:name=".BookSearch">
 
         </activity>
@@ -16,12 +17,10 @@
         <activity android:name=".CivilBooks" />
         <activity android:name=".MechBooks" />
         <activity android:name=".AllBooks" />
-
         <activity android:name=".DashBoard" />
         <activity android:name=".Signup" />
         <activity android:name=".Login" />
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

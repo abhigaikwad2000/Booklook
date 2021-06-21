@@ -35,6 +35,7 @@ public class DashBoard extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toobar;
+    String name;
     LinearLayout search,allbooks,newbooks,review;
     TextView navname,navemail;
     View mHeaderView;
@@ -99,7 +100,6 @@ public class DashBoard extends AppCompatActivity {
             }
         });
 
-
         toobar=findViewById(R.id.tool);
         setSupportActionBar(toobar);
         navigationView.bringToFront();
@@ -110,11 +110,14 @@ public class DashBoard extends AppCompatActivity {
         reff.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String name=snapshot.child("Name").getValue().toString();
+                name=snapshot.child("Name").getValue().toString();
                 String email=snapshot.child("email").getValue().toString();
                 //Toast.makeText(DashBoard.this,""+name+email,Toast.LENGTH_LONG).show();
                 navname.setText(name);
                 navemail.setText(email);
+               // Intent i=new Intent(DashBoard.this,BookActivity.class);
+               // startActivity(new Intent().putExtra(name,"username"));
+
             }
 
             @Override
@@ -134,6 +137,7 @@ public class DashBoard extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                Intent i=new Intent(DashBoard.this,BookSearch.class);
+               i.putExtra("username",name);
                startActivity(i);
            }
        });

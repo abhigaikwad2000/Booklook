@@ -6,6 +6,8 @@ public class Book {
     }
 
     private String Author;
+    private String Department;
+    private String Name;
 
     public Book(String author, String department, String name) {
         Author = author;
@@ -13,8 +15,7 @@ public class Book {
         Name = name;
     }
 
-    private String Department;
-    private String Name;
+
 
     public String getAuthor() {
         return Author;

@@ -15,32 +15,35 @@
 
     >
     <LinearLayout
+        android:padding="20dp"
         android:layout_width="match_parent"
         android:background="@drawable/cardbackground"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/bookname"
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/amaranth"
             android:textSize="20sp"></TextView>
-    <TextView
+
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/amaranth"
+            android:textSize="15sp"></TextView>
+
+        <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bookauthor"
+        android:id="@+id/author"
+            android:layout_marginTop="4dp"
         android:textSize="15sp"
-        android:layout_margin="7dp"
-        android:fontFamily="@font/amaranth"
-        ></TextView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bookdepartment"
-        android:textSize="15sp"
-        android:layout_margin="7dp"
         android:fontFamily="@font/amaranth"
         ></TextView>
 
