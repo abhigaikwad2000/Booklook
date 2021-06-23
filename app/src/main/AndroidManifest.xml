@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/bkicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Boollook">
-        <activity android:name=".BookActivity"></activity>
-        <activity android:name=".BookSearch">
-
-        </activity>
+        <activity android:name=".Addb"></activity>
+        <activity android:name=".Aboutus" />
+        <activity android:name=".NewBooks" />
+        <activity android:name=".BookActivity" />
+        <activity android:name=".BookSearch" />
         <activity android:name=".CsBooks" />
         <activity android:name=".CivilBooks" />
         <activity android:name=".MechBooks" />

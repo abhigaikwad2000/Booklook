@@ -6,8 +6,8 @@
     <item android:title="Rate Us"
         android:id="@+id/rateus"
         android:icon="@drawable/iconrateus"/>
-    <item android:title="Contact Us"
-        android:id="@+id/contact"
+    <item android:title="About Us"
+        android:id="@+id/aboutus"
         android:icon="@drawable/iconcontactus"/>
     <item android:title="Log Out"
         android:id="@+id/logout"

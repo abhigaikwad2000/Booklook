@@ -10,48 +10,48 @@
 
     android:layout_marginTop="10dp"
     app:cardCornerRadius="10dp"
-
+    android:foreground="?android:attr/selectableItemBackground"
     app:cardElevation="10dp">
 
-    >
+
     <LinearLayout
-        android:padding="20dp"
         android:layout_width="match_parent"
         android:background="@drawable/cardbackground"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/amaranth"
-            android:textSize="20sp"></TextView>
-
-
-        <TextView
-            android:id="@+id/review"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/amaranth"
-            android:textSize="15sp"></TextView>
-        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/upvote"
-            android:text="Up"
-            ></Button>
+            android:rotation="0"
+            android:rotationX="0"
+            android:rotationY="0"
+            android:text="NEW*"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"></TextView>
 
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/author"
-            android:layout_marginTop="4dp"
-        android:textSize="15sp"
-        android:fontFamily="@font/amaranth"
-        ></TextView>
+            android:id="@+id/bookname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/amaranth"
+            android:textSize="20sp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookauthor"
+            android:textSize="15sp"
+            android:layout_margin="7dp"
+            android:fontFamily="@font/amaranth"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookdepartment"
+            android:textSize="15sp"
+            android:layout_margin="7dp"
+            android:fontFamily="@font/amaranth"
+            ></TextView>
 
     </LinearLayout>
 

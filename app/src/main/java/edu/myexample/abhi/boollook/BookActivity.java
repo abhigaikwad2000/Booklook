@@ -77,6 +77,7 @@ public class BookActivity extends AppCompatActivity {
                 } else {
                     String reviewId = FirebaseDatabase.getInstance().getReference("Reviews").child(name).push()
                             .getKey();
+
                     String review = editText.getText().toString().trim();
                     //String username=getIntent().getExtras().getString("username");
 
@@ -102,11 +103,25 @@ public class BookActivity extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull MyViewholder holder, int position, @NonNull Reviews model) {
                 //Reviews ld=listData2.get(position);
+                holder.up.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(BookActivity.this, "hii", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(BookActivity.this, "hii"+model.getKey(), Toast.LENGTH_LONG).show();
+                        //ref=FirebaseDatabase.getInstance().getReference().child("Reviews").child(name).child(model.getKey()).child("author");
+                       // int k=10;
+                       // ref.setValue(k);
+
+
+                    }
+                });
                 holder.bkauthor.setText(model.getAuthor());
                 holder.bkreview.setText(model.getData());
                 holder.bkusername.setText(model.getUsername());
 
+
             }
+
 
             @NonNull
             @Override
@@ -115,6 +130,8 @@ public class BookActivity extends AppCompatActivity {
                 return new MyViewholder(view);
 
             }
+
+
         };
         rvradapter.startListening();
         rvr.setAdapter(rvradapter);

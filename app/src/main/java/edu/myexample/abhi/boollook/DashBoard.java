@@ -1,7 +1,6 @@
 package edu.myexample.abhi.boollook;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
@@ -17,14 +16,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -36,7 +32,7 @@ public class DashBoard extends AppCompatActivity {
     NavigationView navigationView;
     Toolbar toobar;
     String name;
-    LinearLayout search,allbooks,newbooks,review;
+    LinearLayout search,allbooks,newbooks,addbooks;
     TextView navname,navemail;
     View mHeaderView;
     private FirebaseAuth auth;
@@ -54,7 +50,7 @@ public class DashBoard extends AppCompatActivity {
         allbooks=findViewById(R.id.allbooks);
 
         newbooks=findViewById(R.id.newbooks);
-        review=findViewById(R.id.review);
+        addbooks=findViewById(R.id.addb);
         drawerLayout=findViewById(R.id.drawerlayout);
         navigationView=findViewById(R.id.navmenu);
         mHeaderView=navigationView.getHeaderView(0);
@@ -70,6 +66,11 @@ public class DashBoard extends AppCompatActivity {
 
                 switch (id)
                 {
+
+                    case R.id.aboutus:
+                        Intent i2 = new Intent(DashBoard.this,Aboutus.class);
+                        startActivity(i2);
+                        break;
                     case R.id.logout:
                         AlertDialog.Builder alertdialog=new AlertDialog.Builder(DashBoard.this);
                         alertdialog.setIcon(R.drawable.ic_baseline_logout_24);
@@ -129,7 +130,7 @@ public class DashBoard extends AppCompatActivity {
        allbooks.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Intent i=new Intent(DashBoard.this,AllBooks.class);
+               Intent i=new Intent(DashBoard.this, AllBooks.class);
                startActivity(i);
            }
        });
@@ -141,6 +142,23 @@ public class DashBoard extends AppCompatActivity {
                startActivity(i);
            }
        });
+       newbooks.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent i=new Intent(DashBoard.this,NewBooks.class);
+               i.putExtra("username",name);
+               startActivity(i);
+
+           }
+       });
+        addbooks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(DashBoard.this,Addb.class);
+                startActivity(i);
+
+            }
+        });
 
 
     }

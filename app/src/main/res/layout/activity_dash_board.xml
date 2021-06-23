@@ -11,15 +11,15 @@
     tools:openDrawer="start"
     tools:context=".MainActivity"
     >
+
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navmenu"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/navmenu"
-        app:headerLayout="@layout/header"
-        app:menu="@menu/menu"
         android:layout_gravity="start"
-
-        ></com.google.android.material.navigation.NavigationView>
+        app:headerLayout="@layout/header"
+        app:itemTextColor="#FFFFFF"
+        app:menu="@menu/menu"></com.google.android.material.navigation.NavigationView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -202,7 +202,7 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
-                android:id="@+id/review"
+                android:id="@+id/addb"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#8bf6ff"
@@ -220,7 +220,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Review"
+                    android:text="Add Book"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 
@@ -235,7 +235,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Top Book Review"
+                    android:text="Add Books Here"
                     android:textColor="@android:color/black" />
 
             </LinearLayout>

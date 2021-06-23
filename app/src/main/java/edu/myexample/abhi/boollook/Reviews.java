@@ -1,10 +1,21 @@
 package edu.myexample.abhi.boollook;
 
+import com.google.firebase.database.Exclude;
+
 public class Reviews {
 
     public Reviews() {
     }
 
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+@Exclude
+    private String key;
     private String Author;
     private String Data;
     private String Username3;

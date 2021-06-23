@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addb"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BooK Name"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bkname"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="book name"></EditText>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Author"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bkauthor"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Author name"></EditText>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Department "
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bkdepartment"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Department name"></EditText>
+
+    <ProgressBar
+        android:layout_marginTop="30dp"
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/AddBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Book" />
+
+</LinearLayout>
